@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "oswald";
+}
+
+#container{
+    height: 100vh;
+    
+}
+
+.navigation__nav-bar{
+    font-family: "Oswald";
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    background-color: rgba(0, 0, 0, 0.9);  
+}
+
+
+.navigation__nav{
+    height: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.navigation__list{
+    display: flex;
+    list-style: none;
+    font-size: 22px;
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.navigation__link{
+    color: white;
+}
+.navigation__link:hover{
+    color: rgb(209, 206, 201);
+}
+
+.navigation__logo-img{
+    width: 98px;
+    color: white;
+}
+
+.navigation__item-icon{
+    font-size: 25px;
+    margin: 20px;
+    color: white;
+}
+
+.navigation__item-icon:hover{
+    color: rgb(209, 206, 201);
+    cursor: pointer;
+}
+
+.navigation__item{
+    margin: 20px;
+    color: white;
+    
+}
+.presentation__div{
+    position: relative;
+    height: 100%;
+}
+
+.presentation__photo{
+    position: relative;
+}
+
+.presentation__photo-img{
+    height: 100%;
+    width: 100%;
+}
+    
+
+.presentation__enseigne-img{
+    height:73%;
+    position: absolute;
+    top: 15%;
+    left: 31%;
+}
+
+.bandeau__citation{
+    margin-top: -5px;
+}
+
+.bandeau__citation-text{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(200, 157, 101);
+    color: white;
+    text-transform: uppercase;
+    font-weight: bolder;
+    height: 160px;
+    font-size: 30px;
+}
+
+.traditions{
+    margin: 0;
+    width: 100%;
+}
+
+.traditions__element{
+    /* width: 100%; */
+    display: flex;
+}
+
+.description{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.description__titre{
+    font-size: 50px;
+}
+
+.description__sous-titre{
+     margin-top: 5px;
+     font-size: 17px;
+     font-family: 'Times New Roman', Times, serif;
+     font-style: italic;
+}
+
+.description__text{
+    /* width: 100%; */
+    font-family: "Raleway";
+    text-align: center;
+    color: rgb(161, 159, 159);
+    padding: 30px;
+}
+
+.image{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image2{
+    position: absolute ;
+}
+
+.story__element{
+    display: flex;
+    /* width: 100%; */
+}
+
+.button{
+    background-color: rgb(200, 157, 101);
+    font-size: 18px;
+    height: 60px;
+    width: 150px;
+    border: none;
+    border-radius: 3px;
+}
+
+.button:hover{
+    background-color: rgb(216, 185, 142);
+}
+
+.galerie__image{
+    
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.galerie__img{
+    width: 100%;
+    z-index: 0;
+    transform: translateX(-40px) scale(1.4);
+ /* position: absolute; */
+ /* top: 0;
+ left: 0; */
+ /* z-index: -1; */
+}
+
+.galerie__parallax-img{
+   width: 480px;
+   height: 480px;
+    position: absolute;
+    top: 0;
+ left: 0px;
+ z-index: -1;
+    
+}
+
+.galerie__parallax{
+    height: 200px;
+}
+
+.fa-solid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 10px;
+    position: absolute;
+   font-size: 100px;
+    color: white;
+    width: 480px;
+    height: 480px;
+    z-index: -1;
+    /* text-align: center; */
+}
+
+.fa-solid:hover{
+    transform: rotateZ(90deg);
+    transition: all 5s;
+    z-index: 20;
+    backface-visibility: hidden;
+}
+
+.galerie__parallax-img:hover{
+    transition: all 0.5s;
+    z-index: 0;
+    transform: translateX(40px) scale(1);
+    backface-visibility: hidden;
+}
+
+.galerie__img:hover{
+    transition: all 0.5s;
+    z-index: -1;
+    backface-visibility: hidden;
+}
