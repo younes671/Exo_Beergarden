@@ -181,67 +181,94 @@ a{
 }
 
 .galerie__image{
-    
+    width: 100%;
+    margin: 0;
     display: flex;
     position: relative;
-    justify-content: center;
-    align-items: center;
-}
+} 
 
 .galerie__img{
-    width: 100%;
-    z-index: 0;
-    transform: translateX(-40px) scale(1.4);
- /* position: absolute; */
- /* top: 0;
- left: 0; */
- /* z-index: -1; */
+  width: 100%;
 }
 
-.galerie__parallax-img{
-   width: 480px;
-   height: 480px;
-    position: absolute;
-    top: 0;
- left: 0px;
- z-index: -1;
     
-}
-
-.galerie__parallax{
-    height: 200px;
+figure{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+    
 }
 
 .fa-solid{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    left: 10px;
+    
+    /* border: none; */
+    opacity: 1;
     position: absolute;
    font-size: 100px;
     color: white;
-    width: 480px;
-    height: 480px;
-    z-index: -1;
-    /* text-align: center; */
+    top: 180px;
 }
 
 .fa-solid:hover{
-    transform: rotateZ(90deg);
-    transition: all 5s;
-    z-index: 20;
+    transform: rotateZ(90deg);  
+    transition: all .5s;
+    opacity: 1;
     backface-visibility: hidden;
-}
-
-.galerie__parallax-img:hover{
-    transition: all 0.5s;
     z-index: 0;
-    transform: translateX(40px) scale(1);
-    backface-visibility: hidden;
 }
 
-.galerie__img:hover{
+/* .galerie__img:hover{
     transition: all 0.5s;
-    z-index: -1;
-    backface-visibility: hidden;
+    background-size: cover;
+    background-attachment: fixed;
+}  */
+
+.parallax-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 473px;
+    height: 477px;
+    /* overflow: hidden; */
+}
+
+/* .galerie__img1,*/ .galerie__parallax{ 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.galerie__parallax{
+    opacity: 0;
+    /* transition: opacity 0.3s ease; */
+}
+
+.galerie__parallax:hover{
+    transition: all 0.5s;
+    opacity: 1;
+    z-index: 0; 
+}
+
+.services{
+    display: flex;
+    height: 400px;
+}
+
+.services__rubrique{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.services__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
